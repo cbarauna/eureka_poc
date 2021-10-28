@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: 'fornecedor'
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    br.example.loja: DEBUG
+server:
+  port: 8081
